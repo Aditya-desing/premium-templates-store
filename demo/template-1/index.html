@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Live Demo – Premium Template</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,Helvetica,sans-serif}
+body{background:#020617;color:#fff;line-height:1.6}
+
+/* ===== STICKY HEADER (FINAL STYLE) ===== */
+header{
+position:fixed;top:0;left:0;width:100%;z-index:999;
+background:rgba(2,6,23,.65);
+backdrop-filter:blur(10px);
+border-bottom:1px solid rgba(255,255,255,.08)
+}
+.nav{
+max-width:1200px;margin:auto;
+display:flex;align-items:center;justify-content:space-between;
+padding:14px 20px
+}
+.logo{font-size:20px;font-weight:bold;color:#22c55e}
+nav a{
+margin-left:18px;text-decoration:none;color:#fff;font-size:14px;opacity:.85
+}
+nav a:hover{opacity:1}
+
+section{padding:100px 20px}
+.container{max-width:1200px;margin:auto}
+
+/* ===== HERO ===== */
+.hero{
+min-height:100vh;display:flex;align-items:center;
+background:linear-gradient(135deg,#7c3aed,#ec4899)
+}
+.hero h1{font-size:42px;margin-bottom:10px}
+.hero p{max-width:520px;opacity:.9}
+.hero .btn{
+display:inline-block;margin-top:20px;
+padding:12px 26px;border-radius:30px;
+background:#020617;color:#fff;text-decoration:none
+}
+
+/* ===== SECTIONS ===== */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.card{
+background:#020617;border:1px solid rgba(255,255,255,.08);
+border-radius:16px;padding:20px;transition:.3s
+}
+.card:hover{transform:translateY(-6px)}
+
+/* ===== CONTACT ===== */
+.contact-box{
+background:#020617;border-radius:18px;
+border:1px solid rgba(255,255,255,.08);
+padding:25px;max-width:500px;margin:auto
+}
+input,textarea{
+width:100%;padding:12px;margin:10px 0;
+border-radius:10px;border:none;outline:none
+}
+button{
+width:100%;padding:12px;border-radius:25px;
+border:none;background:#22c55e;font-weight:bold;cursor:pointer
+}
+
+footer{text-align:center;padding:20px;opacity:.6}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="nav">
+    <div class="logo">AdityaTemplates</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="container">
+    <h1>Premium Website Template</h1>
+    <p>This is a live demo preview. Design, animations and layout are exactly what you get after purchase.</p>
+    <a class="btn" href="#portfolio">View Sections</a>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="container">
+    <h2>Services</h2>
+    <div class="grid">
+      <div class="card">Responsive Design</div>
+      <div class="card">Modern UI / UX</div>
+      <div class="card">Fast Loading</div>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio">
+  <div class="container">
+    <h2>Portfolio</h2>
+    <div class="grid">
+      <div class="card">Project One</div>
+      <div class="card">Project Two</div>
+      <div class="card">Project Three</div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <h2 style="text-align:center">Contact (Demo)</h2>
+    <div class="contact-box">
+      <input placeholder="Your Name">
+      <input placeholder="Your Email">
+      <textarea rows="4" placeholder="Message"></textarea>
+      <button>Send (Demo Only)</button>
+    </div>
+  </div>
+</section>
+
+<footer>Live Demo Only • Full source files after purchase</footer>
+
+</body>
+</html>
